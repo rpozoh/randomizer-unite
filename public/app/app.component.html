@@ -1,0 +1,22 @@
+
+<mat-grid-list cols="2" rowHeight="8:1">
+    <mat-grid-tile><button (click)="setEx()">{{ exTag }}</button></mat-grid-tile>
+    <mat-grid-tile><button (click)="setRol()">{{ rolTag }}</button></mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="5" rowHeight="2:2">
+  <div class="col-md-2" *ngFor="let team of teams">
+    <mat-grid-tile>
+      <mat-grid-tile-footer>{{ team.name }}</mat-grid-tile-footer>
+      <img class="img-fluid" src="{{ team.image }}" alt="{{ team.image }}" [style.background-color]="team.color">
+    </mat-grid-tile>
+  </div>
+</mat-grid-list>
+
+<mat-grid-list cols="3" rowHeight="8:1">
+  <mat-grid-tile><button (click)="generateRandomTeam()">Generar Equipos</button></mat-grid-tile>
+  <mat-grid-tile><button (click)="generateRandomNoRepeat()">Sin repetir</button></mat-grid-tile>
+  <mat-grid-tile><button (click)="generateRandomBalancedTeam()">Balanceado</button></mat-grid-tile>
+</mat-grid-list>
+
+<router-outlet />
