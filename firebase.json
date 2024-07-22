@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/randomizer-unite",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
