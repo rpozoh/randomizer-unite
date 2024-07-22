@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "randomizer-unite-e0cc9"
+  },
+  "targets": {
+    "randomizer-unite-e0cc9": {
+      "hosting": {
+        "randomizer-unite": [
+          "randomizer-unite-e0cc9"
+        ]
+      }
+    }
   }
 }
